@@ -1,0 +1,36 @@
+1. Install the RazorGenerator Visual Studio Extension
+
+2. Add a new, empty MVC project to the Tenants folder.  
+	--> (The project will not actually run as an MVC site, but this will give you the proper tooling)
+
+3. Delete the following...App_Data, App_Start, Models, Global.asax, Web.config, Views\Web.config
+
+4. Add a reference to the main Web project, the TenancyCore
+
+5. Add the following Post-Build Events (Adjusted for your physical folder structure)
+
+	%systemroot%\Microsoft.NET\Framework\v4.0.30319\installutil "$(TargetPath)"
+	copy /Y "$(TargetDir)$(TargetName)*.dll" "$(SolutionDir)Web\Tenants\"
+	copy /Y "$(TargetDir)$(TargetName)*.pdb" "$(SolutionDir)Web\Tenants\"
+
+6. Add a class with the name of the tenant that inherits from AbstractTenant
+
+7. Set properties on Tenant in the constructor method of the class.
+
+
+
+*** To Override Controller Functionality ***
+
+1. Implement a class that inherits from the controller class in the main web project
+
+2. Override the specific action method
+
+
+*** To Override the View ***
+
+1. Add the view to the appropriate sub-folder in the Views folder
+
+2. Open the "Properties" window for the View and set the Custom Tool to "RazorGenerator"
+	--> (This will add a generated *.cs file beneath the view)
+
+3. This will pre-empt the version in the main web project.

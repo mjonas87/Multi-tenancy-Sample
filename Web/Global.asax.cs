@@ -1,57 +1,56 @@
-﻿namespace MultiTenancy.Web
-{
-    using System.IO;
-    using System.Web.Mvc;
-    using System.Web.Routing;
-    using MultiTenancy.Core;
-    using StructureMap;
+﻿using RazorMultiTenancy.Web.App_Start;
+using RazorMultiTenancy.Web.Enums;
+using System;
+using System.Globalization;
+using System.Threading;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Routing;
 
+namespace RazorMultiTenancy.Web
+{
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // visit http://go.microsoft.com/?LinkId=9394801
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                "Default",
-                "{controller}/{action}/{id}",
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
-        }
-
         protected void Application_Start()
         {
-            // I'm not using areas... no need to register.
-            // AreaRegistration.RegisterAllAreas();
+            AreaRegistration.RegisterAllAreas();
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            TenantConfig.RegisterPlumbing(HttpContext.Current);
+        }
 
-            RegisterRoutes(RouteTable.Routes);
-
-            // create a container just to pull in tenants
-            var topContainer = new Container();
-            topContainer.Configure(config =>
+        protected void Application_AcquireRequestState(object sender, EventArgs e)
+        {
+            //It's important to check whether session object is ready
+            if (HttpContext.Current.Session != null)
             {
-                config.Scan(scanner =>
+                CultureInfo ci = (CultureInfo)this.Session[SessionKeys.Culture.ToString()];
+
+                //Checking first if there is no value in session 
+                //and set default language 
+                //this can happen for first user's request
+                if (ci == null)
                 {
-                    // scan the tenants folder
-                    // (For some reason just passing "Tenants" doesn't seem to work, which it should according to the docs)
-                    scanner.AssembliesFromPath(Path.Combine(Server.MapPath("~/"), "Tenants"));
+                    //Sets default culture to english invariant
+                    string langName = "en";
 
-                    // pull in all the tenant types
-                    scanner.AddAllTypesOf<IApplicationTenant>();
-                });
-            });
-
-            // create selectors
-            var tenantSelector = new DefaultTenantSelector(topContainer.GetAllInstances<IApplicationTenant>());
-            var containerSelector = new TenantContainerResolver(tenantSelector);
-            
-            // clear view engines, we don't want anything other than spark
-            ViewEngines.Engines.Clear();
-            // set view engine
-            ViewEngines.Engines.Add(new TenantViewEngine(tenantSelector));
-
-            // set controller factory
-            ControllerBuilder.Current.SetControllerFactory(new ContainerControllerFactory(containerSelector));
+                    //Try to get values from Accept lang HTTP header
+                    if (HttpContext.Current.Request.UserLanguages != null && HttpContext.Current.Request.UserLanguages.Length != 0)
+                    {
+                        //Gets accepted list
+                        langName = HttpContext.Current.Request.UserLanguages[0].Substring(0, 2);
+                    }
+                    ci = new CultureInfo(langName);
+                    this.Session[SessionKeys.Culture.ToString()] = ci;
+                }
+                //Finally setting culture for each request
+                Thread.CurrentThread.CurrentUICulture = ci;
+                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
+            }
         }
     }
 }

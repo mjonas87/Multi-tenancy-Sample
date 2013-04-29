@@ -1,0 +1,5 @@
+1. Add a URL to the ITenant.UrlPaths property similar to "http://localhost:3455/"
+
+2. Change your web site to debug on that port.
+
+(I have yet to figure out a way to test multiple sites simultaneously)

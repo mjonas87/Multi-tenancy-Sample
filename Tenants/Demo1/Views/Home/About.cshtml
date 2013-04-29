@@ -1,0 +1,20 @@
+﻿@model RazorMultiTenancy.BaseViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var viewAssembly = "Demo 1 Module";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewRes.PageStaticText.HomeAboutTitle</title>
+</head>
+<body>
+    <h1></h1>
+    <div>
+        @ViewRes.PageStaticText.ControllerAssembly: @Model.Assembly<br />
+        @ViewRes.PageStaticText.ViewAssembly: @viewAssembly<br />
+    </div>
+</body>
+</html>

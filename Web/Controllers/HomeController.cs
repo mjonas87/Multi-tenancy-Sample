@@ -1,32 +1,42 @@
-﻿using System.Web.Mvc;
-
-namespace MultiTenancy.Web.Controllers
+﻿namespace RazorMultiTenancy.Web.Controllers
 {
-    public class HomeController : Controller
+    using RazorMultiTenancy.TenancyCore;
+    using RazorMultiTenancy.TenancyCore.Abstract;
+    using System.Web.Mvc;
+
+    /// <summary>
+    /// Home Controller (Default)
+    /// </summary>
+    public class HomeController : TenantAwareController
     {
+        #region Constructor
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="tenant"></param>
+        public HomeController(ITenant tenant) : base(tenant) { }
+
+        #endregion  
+
+        #region Actions
+
+        /// <summary>
+        /// Index Action (Default)
+        /// </summary>
+        /// <returns></returns>
         public virtual ActionResult Index()
         {
-            return View("Index");
+            this.Model.Assembly = "Main";
+            return View(this.Model);
         }
 
-        public ActionResult List()
+        public virtual ActionResult About()
         {
-            return View("List");
+            this.Model.Assembly = "Main";
+            return View(this.Model);
         }
 
-        public ActionResult Detail()
-        {
-            return View("Detail");
-        }
-
-        public ActionResult Search()
-        {
-            return View("Search");
-        }
-
-        public ActionResult Notification()
-        {
-            return View("_Notification", "Ajax");
-        }
+        #endregion
     }
 }

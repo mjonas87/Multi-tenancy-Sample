@@ -1,0 +1,29 @@
+﻿@model RazorMultiTenancy.BaseViewModel
+
+@{
+    Layout = null;
+    var tenant = Model.Tenant;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    @if(tenant.Languages.Count() > 1){
+        foreach (var lang in tenant.Languages)
+        {
+            @Html.ActionLink(ViewRes.PageStaticText.ResourceManager.GetString(lang.ToString()), "Change", "Culture", new { lang = lang.ToString(), returnUrl = this.Request.RawUrl }, new { style = "margin-right: 10px;"});
+        }
+    }
+
+    <h1>@tenant.Name</h1>
+    
+    @ViewRes.PageStaticText.LayoutAssembly : Main<br />
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

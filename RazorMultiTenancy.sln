@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tenants", "Tenants", "{A19233F3-6A20-4D04-AD36-8F8883550532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "Tenants\Demo2\Demo2.csproj", "{A4454578-5422-4327-9EF4-CBE210D8A79A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{D6A166D4-2928-4577-8A46-C3F77CA10FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenancyCore", "TenancyCore\TenancyCore.csproj", "{67C2446C-3B27-41C6-93B9-F69AAA4E14EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{FEBF8F9B-215A-46D8-94D8-707B6597DC38}"
+	ProjectSection(SolutionItems) = preProject
+		HowToAddTenant.txt = HowToAddTenant.txt
+		HowToDebug.txt = HowToDebug.txt
+		HowToOverrideController.txt = HowToOverrideController.txt
+		HowToOverrideView.txt = HowToOverrideView.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo1", "Tenants\Demo1\Demo1.csproj", "{32972C5E-54D1-465D-9315-009B9A5F123D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4454578-5422-4327-9EF4-CBE210D8A79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4454578-5422-4327-9EF4-CBE210D8A79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4454578-5422-4327-9EF4-CBE210D8A79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4454578-5422-4327-9EF4-CBE210D8A79A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A166D4-2928-4577-8A46-C3F77CA10FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A166D4-2928-4577-8A46-C3F77CA10FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A166D4-2928-4577-8A46-C3F77CA10FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A166D4-2928-4577-8A46-C3F77CA10FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C2446C-3B27-41C6-93B9-F69AAA4E14EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C2446C-3B27-41C6-93B9-F69AAA4E14EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C2446C-3B27-41C6-93B9-F69AAA4E14EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C2446C-3B27-41C6-93B9-F69AAA4E14EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32972C5E-54D1-465D-9315-009B9A5F123D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32972C5E-54D1-465D-9315-009B9A5F123D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32972C5E-54D1-465D-9315-009B9A5F123D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32972C5E-54D1-465D-9315-009B9A5F123D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4454578-5422-4327-9EF4-CBE210D8A79A} = {A19233F3-6A20-4D04-AD36-8F8883550532}
+		{32972C5E-54D1-465D-9315-009B9A5F123D} = {A19233F3-6A20-4D04-AD36-8F8883550532}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

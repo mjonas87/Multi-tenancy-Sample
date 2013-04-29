@@ -1,0 +1,70 @@
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\LMS.Web.Member.TenancyCore.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\LMS.Web.Member.TenancyCore.pdb
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Newtonsoft.Json.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\RazorGenerator.Mvc.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Net.Http.Formatting.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Helpers.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.WebHost.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Mvc.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Razor.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Razor.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\WebActivator.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\WebActivatorEx.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\Newtonsoft.Json.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.pdb
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Net.Http.Formatting.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Helpers.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.WebHost.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Mvc.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Razor.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Razor.xml
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\obj\Debug\LMS.Web.Member.TenancyCore.dll
+C:\TFS\LMS\LMS\Trunk\Web\Member\TenancyCore\Code\obj\Debug\LMS.Web.Member.TenancyCore.pdb
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\LMS.Web.Member.TenancyCore.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\LMS.Web.Member.TenancyCore.pdb
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\RazorGenerator.Mvc.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Helpers.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Mvc.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Razor.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\WebActivator.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\WebActivatorEx.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.pdb
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\StructureMap.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Helpers.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Mvc.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.Razor.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\obj\Debug\LMS.Web.Member.TenancyCore.dll
+C:\Users\mjonas\Desktop\For Open Source\Web\Member\TenancyCore\Code\obj\Debug\LMS.Web.Member.TenancyCore.pdb

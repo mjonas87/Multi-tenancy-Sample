@@ -1,0 +1,6 @@
+1. Add the view to the appropriate sub-folder in the Views folder
+
+2. Open the "Properties" window for the View and set the Custom Tool to "RazorGenerator"
+	--> (This will add a generated *.cs file beneath the view)
+
+3. This will pre-empt the version in the main web project.
